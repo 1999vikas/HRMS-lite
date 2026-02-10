@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
-import api from "../api/axios";
+import {  useState } from "react";
 import AttendanceForm from "../components/AttendanceForm";
 import AttendanceTable from "../components/AttendanceTable";
 
 export default function Attendance() {
-  const [employees, setEmployees] = useState([]);
+  
   const [reloadKey, setReloadKey] = useState(0)
 
   const handleSuccess = () => {
@@ -12,13 +11,11 @@ export default function Attendance() {
     setReloadKey((prev) => prev + 1)
   }
 
-  useEffect(() => {
-    api.get("/employees").then((res) => setEmployees(res.data));
-  }, []);
+  
 
   return (
     <>
-    <AttendanceForm employees={employees} onSuccess={handleSuccess} />
+    <AttendanceForm  onSuccess={handleSuccess} />
     
     <AttendanceTable key={reloadKey}/>
     </>

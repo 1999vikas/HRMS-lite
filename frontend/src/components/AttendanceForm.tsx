@@ -7,6 +7,8 @@ interface Employee {
   full_name: string
 }
 
+
+
 interface Errors {
   employee_id?: string
   date?: string
@@ -51,7 +53,7 @@ const AttendanceForm = ({ onSuccess }: { onSuccess: () => void }) => {
     if (!form.date) {
       newErrors.date = "Date is required"
     } else {
-      const selected = new Date(form.date)
+      
       const today = new Date()
 
       today.setHours(0, 0, 0, 0)
