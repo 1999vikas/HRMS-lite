@@ -15,7 +15,7 @@
 ## Tech Stack
 
 * **Backend:** Python, FastAPI, SQLAlchemy, PyMySQL
-* **Frontend:** React / Next.js
+* **Frontend:** React.js
 * **Database:** MySQL
 * **Deployment:** Render (backend), Vercel  (frontend)
 
