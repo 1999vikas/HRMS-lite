@@ -1,6 +1,9 @@
+#!/bin/bash
 
 
-# Install dependencies 
+cd backend
+
+
 pip install -r requirements.txt
 
 
