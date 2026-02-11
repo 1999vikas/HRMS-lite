@@ -1,5 +1,7 @@
 # HRMS Lite
 
+backend:-https://hrms-lite-jiqe.onrender.com/
+frontend:- https://hrms-lite-omega-smoky.vercel.app/
 ---
 
 ## Features
